@@ -1,0 +1,30 @@
+name: drupal_schooler
+type: theme
+Description: "A Drupal_schooler Drupal 8 Theme with Bootstrap 4 css library"
+package: custom
+core: 8.x
+
+base theme: bootstrap_barrio
+
+regions:
+  header: 'Header'
+  topbanner: 'Top Banner'
+  counters: 'Counters'
+  content: 'Content'
+  info1: 'Info 1'
+  performance: 'Performance'
+  info2: 'Info 2'
+  contacts: 'Contacts'  
+  technologies: 'Technologies'
+  bottombanner: 'Bottom banner'
+  footer: 'Footer'
+
+libraries:
+  - drupal_schooler/bootstrap_cdn
+  - drupal_schooler/global-styling
+  - drupal_schooler/stylesheets/fonts
+
+# Add Main Bootstrap CDNs
+# bs-cdn-css: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
+# bs-cdn-js: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'
+

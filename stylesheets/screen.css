@@ -1,0 +1,393 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../home/seorus/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("fonts/HelveticaNeue.ttf");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: HelveticaNeue, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.video-banner {
+	position: absolute; 
+	z-index: -1; 
+	top: 0px; 
+	left: 0px; 
+	bottom: 0px; 
+	right: 0px; 
+	overflow: hidden; 
+	background-size: cover; 
+	background-color: transparent; 
+	background-repeat: no-repeat; 
+	background-position: 50% 50%; 
+	background-image: none;
+}
+
+video {
+	margin: auto; 
+	position: absolute; 
+	z-index: -1; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	visibility: visible; 
+	opacity: 1; 
+	width: 100%; 
+	height: auto;
+}
+
+.swiper-container {
+/*     width: 100vw; */
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    background-color: #1f2845;
+}
+
+.swiper-wrapper, .swiper-wrapper * {
+    backface-visibility: hidden;
+}
+
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+    -webkit-transform: translate3d(0px,0,0);
+    transform: translate3d(0px,0,0);
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.swiper-container-fade .swiper-slide-active, .swiper-container-fade .swiper-slide-active .swiper-slide-active {
+    pointer-events: auto;
+}
+
+.swiper-container-fade .swiper-slide {
+    pointer-events: none;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.video-bg-overlay {
+    position: relative;
+}
+
+.vide_bg {
+    width: 100%;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.swiper-wrapper, .swiper-wrapper * {
+    backface-visibility: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 10vw;
+    background-size: cover;
+    background-position: center;
+    opacity: 1; 
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+
+.video-bg-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+/*--Mobile menu --*/
+#sm_menu_ham, .sm_menu_outer {
+    display: block;
+}
+
+.page-header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+    
+.page-header .container {
+    margin: 0;
+    float: left;
+}
+
+.page-header .search-block-form {
+    float: right;
+    margin-right: 35px;
+}
+    
+#sm_menu_ham {
+    top: 50px!important;
+}
+
+#sm_menu_ham {
+    top: 50px!important;
+}
+
+section#home {
+    position: relative;
+}
+
+.swiper-slider-description  {
+    backface-visibility: hidden;
+    font-family: 'Anton', sans-serif;
+    margin: 25vh 25vw;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+    font-weight: 800;
+}
+
+.swiper-slider-description ._first {
+    font-size: 110px;
+    text-transform: none;
+    line-height: .9;
+    font-family: 'Anton', sans-serif;
+}
+
+.swiper-slider-description ._first ._left {
+    font-size: 44px;
+    line-height: 1.16667;
+    font-weight: 800;
+    letter-spacing: .5px;
+    color: #fff!important; 
+    text-transform: lowercase!important;
+    display: inline-block;
+    color: #fff!important;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+
+.swiper-slider-description ._first ._right {
+    font-size: 110px;
+    color: #fff!important;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.swiper-slider-description ._second {
+    background-color: #80deea;
+    color: white;
+    font-size: 35px;
+    padding: 5px;
+}
+
+.swiper-slider-description ._third {
+    font-size: 18px;
+    color: white;
+    margin: 20px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.btn-outline-secondary {
+    /* color: #80deea; */
+    background-color: #80deea;
+    background-image: none;
+    border-color: #80deea;
+    color: white;
+}
+
+button.btn.btn-outline-secondary:hover {
+    color: white;
+    background-color: #000;
+    border-color: #000;
+}
+
+@media (min-height: 800px) and (min-width: 1200px) {
+.section-lg {
+    padding: 120px 0;
+    }
+}
+.bg-decor {
+    transform: translate3d(0px, 60.72px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -webkit-transform: translate3d(0px, 60.72px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+
+.justify-content-end {
+    justify-content: flex-end!important;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.font-weight-bold {
+    font-weight: 700!important;
+}
+
+.rotate-area {
+    animation-delay: .5s;
+    display: inline-block;
+    transition: width .5s cubic-bezier(.25,.46,.45,.94);
+    white-space: nowrap;
+}
+
+.fadeInUpSmall {
+    animation-name: fadeInUpSmall;
+    transform-origin: 50% 100%;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+.rotate-list {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.rotate-list {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.box-counter {
+    text-align: center;
+    color: #000;
+}
+
+.page .icon-lg {
+    font-size: 44px;
+}
+
+.page .icon-primary {
+    color: #80deea;
+}
+
+.box-counter__icon {
+    font-size: 44px;
+    line-height: 1;
+    color: #80deea;
+}
+
+*+.box-counter__wrap {
+    margin-top: 15px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+.box-counter__wrap>* {
+    font-family: fira sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    display: inline;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+.box-counter__title {
+    font-size: 16px;
+    }
+}
+
+.box-counter__title {
+    font-size: 16px;
+}
+
+.box-counter__title {
+    font-family: fira sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #41516a;
+}
+
+

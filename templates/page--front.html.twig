@@ -1,0 +1,139 @@
+
+<div id="page" class="page">
+	<div class="page-header">
+    {% if page.header %}
+        <section id="header">
+            <div>
+                {{ page.header }}
+            </div>
+        </section>
+    {% endif %}
+	</div>
+
+  {# --Banner Top -- #}
+
+	<section class="section" id="home">
+	       <div class="swiper-slider-description">
+                <div class="_first">
+                    <span class="_left">the</span><span class="_right">future</span>
+                </div>
+                <div class="_second">
+                    Brand new & improved!
+                </div>
+                <div class="_third">
+                    <p>the Future boasts clean and crispy design, bulletproof layout</p><p> consistence and intuitive navigation.</p>
+                </div>
+                <div class="_fourth">
+                    <a href="#"><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+                </div>
+            </div>
+            <div class="swiper-container swiper-slider" data-simulate-touch="false" data-loop="false" data-autoplay="6500">
+	          <div class="swiper-wrapper">
+	            <div class="swiper-slide swiper-slide_video context-dark video-bg-overlay vide_bg swiper-slide-active" data-vide-bg="video/video" data-vide-options="posterType: jpg">
+	            	<div class="video-banner">
+	            		<video autoplay="" loop="" muted="" >
+	            			<source src="themes/drupal_schooler/images/video_1.mp4" type="video/mp4">
+	            		</video>
+					</div>
+	            </div>
+	          </div>
+	        </div>
+	</section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <topbanner id="top_banner">
+                    <div class="top-banner">
+                        {{ page.topbanner }}
+                    </div>
+                </topbanner>
+            </div>
+        </div>
+    </div>
+    <section class="section-lg text-center bg-gray-lighter" id="features">
+        <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{"y" : 150,  "smoothness": 30}" style="transform:translate3d(0px, 98.605px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 98.605px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+            <img src="themes/drupal_schooler/images/bg-decor-10.png" alt="">
+        </div>
+        <div class="row">
+            <div class="col">
+                <counters id="counters">
+                    <div class="counters">
+                        {{ page.counters }}
+                    </div>
+                </counters>
+            </div>
+        </div>
+    </section>
+    <div class='row'>
+        <div class="col">
+            <content id="content">
+                <div class="content">
+                    {{page.content}}
+                </div>
+            </content>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col">
+            <info1 id="info_1">
+                <div class="info-1">
+                    {{page.info1}}
+                </div>
+            </info1>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col">
+            <performance id="performance">
+                <div class="performance">
+                    {{page.performance}}
+                </div>
+            </performance>
+        </div>
+    </div>
+   <div class='row'>
+        <div class="col">
+            <info2 id="info_2">
+                <div class="info-2">
+                    {{page.info2}}
+                </div>
+            </info2>
+        </div>
+    </div>
+   <div class='row'>
+        <div class="col">
+            <contacts id="contacts">
+                <div class="contacts">
+                    {{page.contacts}}
+                </div>
+            </contacts>
+        </div>
+    </div>
+   <div class='row'>
+        <div class="col">
+            <technologies id="technologies">
+                <div class="technologies">
+                    {{page.technologies}}
+                </div>
+            </technologies>
+        </div>
+    </div>
+   <div class='row'>
+        <div class="col">
+            <bottombanner id="bottombanner">
+                <div class="bottombanner">
+                    {{page.bottombanner}}
+                </div>
+            </bottombanner>
+        </div>
+    </div>
+   <div class='row'>
+        <div class="col">
+            <footer id="footer">
+                <div class="footer">
+                    {{page.footer}}
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
