@@ -390,4 +390,61 @@ button.btn.btn-outline-secondary:hover {
     color: #41516a;
 }
 
+/**
+* Info block
+*/
+
+.block-block-contentadcf5baf-7bd4-42c6-b540-5c8635e0e256 {
+    background-repeat: no-repeat;
+    pointer-events: none;
+    -webkit-align-items: center!important;
+            align-items: center!important;
+    margin: 0 auto;
+}
+
+.block-block-contentadcf5baf-7bd4-42c6-b540-5c8635e0e256 h2 {
+    color: #41516a;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 0;
+    /* font-family: fira sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif; */
+    font-weight: 800;
+    /* color: #41516a; */
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-weight: 900;
+    background-color: #80deea;
+    color: white;
+    padding: 5px;
+    min-width: 50vw;
+    display: inline-block;
+}
+
+.block-block-contentadcf5baf-7bd4-42c6-b540-5c8635e0e256 .field__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 30px -15px 30px -15px;
+    padding: 0 20px;
+}
+
+.block-block-contentadcf5baf-7bd4-42c6-b540-5c8635e0e256 h3.counter {
+    color: #000;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 10px auto;
+}
+
+.block-block-contentadcf5baf-7bd4-42c6-b540-5c8635e0e256 .project {
+    font-size: 20px;
+    letter-spacing: 1.3px;
+}
+
+.block-block-contentadcf5baf-7bd4-42c6-b540-5c8635e0e256 .project h4 {
+    font-weight: 700;
+    margin: 10px auto;
+}
+
 
